@@ -114,6 +114,7 @@
 				40F5EBB5296DED19003DA0CB /* HomeViewController.swift */,
 				40F5EBB7296DED40003DA0CB /* UpcomingViewController.swift */,
 				40F5EBBB296DED8F003DA0CB /* SearchViewController.swift */,
+				40F5EBA3296DE453003DA0CB /* MainTabBarViewController.swift */,
 				40F5EBB9296DED66003DA0CB /* DownloadsViewController.swift */,
 			);
 			path = Core;
@@ -154,7 +155,6 @@
 				40F5EBB4296DECD6003DA0CB /* Controllers */,
 				40F5EB9F296DE453003DA0CB /* AppDelegate.swift */,
 				40F5EBA1296DE453003DA0CB /* SceneDelegate.swift */,
-				40F5EBA3296DE453003DA0CB /* MainTabBarViewController.swift */,
 				40F5EBA8296DE457003DA0CB /* Assets.xcassets */,
 				40F5EBAA296DE457003DA0CB /* LaunchScreen.storyboard */,
 				40F5EBAD296DE457003DA0CB /* Info.plist */,
