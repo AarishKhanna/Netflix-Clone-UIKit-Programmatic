@@ -11,6 +11,8 @@ struct Constants {
     static let API_KEY = "ed3c6db2f42a032f11b4672031130c12"
     static let baseURL = "https://api.themoviedb.org/"
     static let screenSize: CGRect = UIScreen.main.bounds
+    static let YoutubeAPI_KEY = "AIzaSyBnQHxnN4VbP3mqkUAEbGHVmiL8lQRQ45g"
+    static let YoutubeBaseURL = "https://youtube.googleapis.com/youtube/v3/search?"
 //    let screenWidth = screenSize.width
 //    let screenHeight = screenSize.height
     
@@ -175,7 +177,7 @@ class APICaller {
         
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
         
-        guard let url = URL(string: "\(Constants.baseURL)/3/searchmovie?api_key=\(Constants.API_KEY)&query=\(query)") else {
+        guard let url = URL(string: "\(Constants.baseURL)/3/search/movie?api_key=\(Constants.API_KEY)&query=\(query)") else {
             return
         }
         
@@ -197,6 +199,36 @@ class APICaller {
         
         task.resume()
 
+    }
+    
+    
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement, Error>) -> Void) {
+        
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+        
+        guard let url = URL(string: "\(Constants.YoutubeBaseURL)q=\(query)&key=\(Constants.YoutubeAPI_KEY)") else {return}
+        
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) {
+            data, _, error in
+            guard let data = data, error == nil else{
+                return
+            }
+            
+            do {
+               // let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
+                completion(.success(results.items[0]))
+                 print(results)
+            }
+            catch{
+                completion(.failure(error))
+                print(error.localizedDescription)
+            }
+        }
+        
+        task.resume()
+        
     }
     
     

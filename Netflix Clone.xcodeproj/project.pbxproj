@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		401644982977223B0041E193 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401644972977223B0041E193 /* CollectionViewTableViewCell.swift */; };
 		4016449A297733B40041E193 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40164499297733B40041E193 /* HeroHeaderUIView.swift */; };
+		408F8715297FB04D00907E57 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F8714297FB04D00907E57 /* YoutubeSearchResponse.swift */; };
+		408F8717297FB57A00907E57 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F8716297FB57A00907E57 /* TitlePreviewViewController.swift */; };
+		408F8719297FB85D00907E57 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F8718297FB85D00907E57 /* TitlePreviewViewModel.swift */; };
 		409D74B3297962130085E554 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D74B2297962130085E554 /* APICaller.swift */; };
 		409D74B52979694E0085E554 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D74B42979694E0085E554 /* Title.swift */; };
 		409D74B729796ED60085E554 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D74B629796ED60085E554 /* Extensions.swift */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		401644972977223B0041E193 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		40164499297733B40041E193 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		408F8714297FB04D00907E57 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		408F8716297FB57A00907E57 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		408F8718297FB85D00907E57 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 		409D74B2297962130085E554 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		409D74B42979694E0085E554 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		409D74B629796ED60085E554 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				409D74B42979694E0085E554 /* Title.swift */,
+				408F8714297FB04D00907E57 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				40F5ED62297AAD0D008F2F4C /* TitleViewModel.swift */,
+				408F8718297FB85D00907E57 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -124,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				40EE514E297EA3C600A7DD92 /* SearchResultsViewController.swift */,
+				408F8716297FB57A00907E57 /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 				40F5EBA0296DE453003DA0CB /* AppDelegate.swift in Sources */,
 				40EE514F297EA3C600A7DD92 /* SearchResultsViewController.swift in Sources */,
 				409D74B729796ED60085E554 /* Extensions.swift in Sources */,
+				408F8715297FB04D00907E57 /* YoutubeSearchResponse.swift in Sources */,
 				40F5EBA2296DE453003DA0CB /* SceneDelegate.swift in Sources */,
+				408F8719297FB85D00907E57 /* TitlePreviewViewModel.swift in Sources */,
 				40F5EBB8296DED40003DA0CB /* UpcomingViewController.swift in Sources */,
+				408F8717297FB57A00907E57 /* TitlePreviewViewController.swift in Sources */,
 				409D74B52979694E0085E554 /* Title.swift in Sources */,
 				40F5EBB6296DED19003DA0CB /* HomeViewController.swift in Sources */,
 				40F5ED63297AAD0D008F2F4C /* TitleViewModel.swift in Sources */,
